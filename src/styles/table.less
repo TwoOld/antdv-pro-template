@@ -1,0 +1,17 @@
+// 样式覆盖
+// table
+.ant-table-thead>tr>th {
+  background: #ffffff;
+  position: relative;
+}
+
+.ant-table-thead>tr>th::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 8px;
+  transform: translate(0, -50%);
+  background: #000000;
+}

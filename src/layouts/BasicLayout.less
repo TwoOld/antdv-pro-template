@@ -1,0 +1,69 @@
+@import "~ant-design-vue/es/style/themes/default.less";
+
+// 样式覆盖
+// header
+.ant-layout-header {
+  .ant-pro-global-header {
+    display: flex;
+    align-items: center;
+
+    .ant-pro-global-header-trigger {
+      display: block;
+      padding: 0 24px;
+    }
+
+    .header-multi-tab-wrap {
+      overflow: hidden;
+      margin-right: 24px;
+
+      .ant-tabs-bar {
+        border-bottom: none;
+      }
+
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+        background: #ffffff;
+        border: none;
+      }
+    }
+
+    .ant-pro-multi-tab {
+      margin: 0;
+    }
+  }
+}
+
+//---------end----------
+
+.ant-pro-global-header-index-right {
+  margin-right: 8px;
+
+  &.ant-pro-global-header-index-dark {
+    .ant-pro-global-header-index-action {
+      color: hsla(0, 0%, 100%, .85);
+
+      &:hover {
+        background: #1890ff;
+      }
+    }
+  }
+
+  .ant-pro-account-avatar {
+    .antd-pro-global-header-index-avatar {
+      margin:~'calc((@{layout-header-height} - 24px) / 2)'0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .menu {
+    .anticon {
+      margin-right: 8px;
+    }
+
+    .ant-dropdown-menu-item {
+      min-width: 100px;
+    }
+  }
+}
