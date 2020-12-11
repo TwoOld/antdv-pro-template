@@ -35,7 +35,6 @@ export default {
     if (!getters.multiTab && !meta.keepAlive) {
       return notKeep
     }
-
     return this.keepAlive || getters.multiTab || meta.keepAlive ? inKeep : notKeep
   }
 }
